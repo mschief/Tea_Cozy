@@ -1,0 +1,15 @@
+/* General styling for whole site */
+body{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+nav a{
+  color: seashell;
+}
+
+/* Header specific styling */
