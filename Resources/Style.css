@@ -6,10 +6,119 @@ body{
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Take out after layout is done. */
+div{
+  border: 2px dotted white;
+}
 nav a{
   color: seashell;
+  text-decoration: underline;
+}
+
+h2, h3, h4{
+  margin: 10px auto;
 }
 
 /* Header specific styling */
+header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  width: 100%; /* Fix width issue with page - it's going off the side */
+  border: 1px solid seashell;
+  margin: 0 10px;
+  z-index: 1;
+  background-color: black;
+}
+
+header .logo{
+  display: inline-block;
+}
+
+header nav{
+  display: inline-block;
+}
+
+nav span{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Hero image content styling */
+.hero{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 70px;
+  height: 700px;
+  width: 1200px;
+  background-image: url("Images/img-mission-background.jpg");
+  background-size: 1200px 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mission{
+  width: 100%;
+  background-color: black;
+}
+
+/* Tea of the month styling */
+.month{
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  width: 1000px;
+}
+
+.teas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.tea{
+  display: flex;
+  align-items: flex-end;
+  background-image: url("Images/img-mission-background.jpg");
+  background-color: black;
+  height: 200px;
+  width: 300px;
+  background-size: 300px 200px;
+}
+
+.tea-name{
+  background-color: black;
+  width: 300px;
+}
+
+#berryblitz{
+  background-image: url("Images/img-berryblitz.jpg");
+}
+
+#spicedrum{
+  background-image: url("Images/img-spiced-rum.jpg");
+}
+
+#donuts{
+  background-image: url("Images/img-donut.jpg");
+}
+
+#myrtle{
+  background-image: url("Images/img-myrtle-ave.jpg");
+}
+
+#bedford{
+  background-image: url("Images/img-bedford-bizarre.jpg");
+}
+
+/* Locations Styling */
