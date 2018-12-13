@@ -21,7 +21,16 @@ nav a{
 }
 
 h2, h3, h4{
+  width: 100%;
   margin: 10px auto;
+}
+
+.flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 /* Header specific styling */
@@ -32,15 +41,19 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 69px;
-  width: 100%; /* Fix width issue with page - it's going off the side */
-  border: 1px solid seashell;
-  margin: 0 10px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
   z-index: 1;
   background-color: black;
 }
 
 header .logo, header nav{
   display: inline-block;
+}
+
+.logo img{
+  height: 50px;
+  padding: 10px;
 }
 
 nav span{
@@ -50,14 +63,10 @@ nav span{
 
 /* Hero image content styling */
 .hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 70px;
   height: 700px;
   width: 1200px;
   background-image: url("Images/img-mission-background.jpg");
-  background-position: center;
 }
 
 .mission{
@@ -67,23 +76,13 @@ nav span{
 
 /* Tea of the month styling */
 .month{
-  display: flex;
-  flex-flow: column wrap;
-  position: relative;
   width: 1000px;
   margin: 70px 0;
-}
-
-.teas{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 
 .tea{
   display: flex;
   align-items: flex-end;
-  background-image: url("Images/img-mission-background.jpg");
   background-repeat: no-repeat;
   height: 235px;
   width: 300px;
@@ -93,6 +92,7 @@ nav span{
 
 .tea-name{
   width: 300px;
+  font-weight: bold;
 }
 
 #berryblitz{
@@ -117,38 +117,21 @@ nav span{
 
 /* Locations Styling */
 .locations{
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
   width: 1200px;
   height: 500px;
   background-image: url("Images/img-locations-background.jpg");
   background-position: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.locations h2{
-  display: inline-block;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .location{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: black;
   opacity: 1;
   width: 300px;
   margin: 15px 20px;
 }
 
-/* Space for contact styling if required in future - currently unneeded*/
-.contact{
-
+.location p, .location h3{
+  width: 100%;
 }
 
 /*Footer styling */
